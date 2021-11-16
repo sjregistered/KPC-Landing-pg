@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* SECTION - 1 (( Carousel ))  */
+
+.box-caption{
+    background-color: #fff;
+    opacity: 70%;
+    border-radius: 5px;
+    border: solid black 1px;
+    /* top: 250px; */
+    /* height: 175px; */
+}
+
+.sampl{
+    border-radius: 10px;
+}
+
+.sampl:hover{
+    background-color: grey;
+    color: white;
+}
+
+#myCarousel-indicators > li {
+    border-radius: 50%;
+    background-color: #5d358c;
+    opacity: 20%;
+  }
+
+.carousel-indicators .active {
+    color: #000;
+  }
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: blue;
+    background-color: blue;
+  }
+
+
+/* SECTION - 2 (( About Us )) */
+
+.about-us-section{
+    /* height: 700px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(4, 155, 4, 0.884);
+}
+
+.img-src{
+    border-radius: 50px;
+}
+
+.about-us{
+    margin-top: 30px;
+}
+
+
+/* SECTION - 3 (( Our Products )) */
+
+.Products{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(236, 198, 204, 0.849);
+}
+
+.products-desc{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-decks{
+    margin-top: 30px;
+}
+
+.card-row-2{
+    margin-top: 30px;
+}
+
+/* --->>>  SECTION - 3 - SUB_PART (( Form Bootstrap ))  */
+
+/* .form-html{
+    background-color: rgba(4, 155, 4, 0.884);
+} */
+
+.form-div{
+background-color: rgba(236, 198, 204, 0.849);
+padding-bottom: 50px;
+}
+
+.sample-req{
+    margin-bottom: 40px;
+}
+.form-foot{
+    background-color: rgba(4, 155, 4, 0.884);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-area{
+    margin-top: 20px;
+}
+
