@@ -9,11 +9,40 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="KPC.css">
   <title>KPC | HOME</title>
+
+  <!-- Start of Async Drift Code -->
+  <script>
+    "use strict";
+
+    !function () {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+          t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function (e) {
+            t[e] = t.factory(e);
+          }), t.load = function (t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('w3pv396wbpit');
+  </script>
+  <!-- End of Async Drift Code -->
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixedsticky fixedtop">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#"><img width="82.5" src="../Resources/Images/kpc-logo-dummy.jpeg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -24,20 +53,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PRODUCTS</a>
+              <a class="nav-link" href="products.html">PRODUCTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT US</a>
+              <a class="nav-link" href="#about-us">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT US</a>
+              <a class="nav-link" href="#foot">CONTACT US</a>
             </li>
 
             <li class="nav-item">
-              <a class="btn sampl btn-default border border-dark text-dark" href="#">SAMPLE REQUEST</a>
+              <a class="btn sampl btn-default border border-dark text-dark" href="#form-sample">SAMPLE REQUEST</a>
             </li>
           </ul>
         </div>
@@ -45,7 +74,7 @@
     </nav>
   </header>
 
-  <div class="carousel-down">
+  <div class="carousel-down" id="home">
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -58,52 +87,53 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="wrapper">
-            <img class="d-block w-100" src="../Resources/Images/bottles.jpg" alt="First slide">
+            <img class="d-block w-100" src="../Resources/Images/bottles.jpg" height="600" alt="First slide">
           </div>
           <div class="carousel-caption box-caption">
-            <h2 class="text-dark">Home Quality Standard</h2>
+            <h2 class="text-dark">Higher Quality Standard</h2>
             <p class="text-dark">India's Most Innovative Packaging Company</p>
-            <a href="" class="btn btn-success">Sample Request</a>
+            <a href="#form-sample" class="btn btn-sample btn-success">Sample Request</a>
           </div>
         </div>
         <div class="carousel-item">
           <div class="wrapper">
-            <img class="d-block w-100" src="../Resources/Images/spray.jpg" alt="Second slide">
+            <img class="d-block w-100" src="../Resources/Images/spray.jpg" height="600" alt="Second slide">
           </div>
           <div class="carousel-caption box-caption">
-            <h2 class="text-dark">Home Quality Standard</h2>
+            <h2 class="text-dark">Higher Quality Standard</h2>
             <p class="text-dark">India's Most Innovative Packaging Company</p>
-            <a href="" class="btn btn-success">Sample Request</a>
+            <a href="#form-sample" class="btn btn-sample btn-success">Sample Request</a>
           </div>
         </div>
         <div class="carousel-item">
           <div class="wrapper">
-            <img class="d-block w-100" src="../Resources/Images/spray-spraying-spray.jpg" alt="Third slide">
+            <img class="d-block w-100" src="../Resources/Images/spray-spraying-spray.jpg" height="600"
+              alt="Third slide">
           </div>
           <div class="carousel-caption box-caption">
-            <h2 class="text-dark">Home Quality Standard</h2>
+            <h2 class="text-dark">Higher Quality Standard</h2>
             <p class="text-dark">India's Most Innovative Packaging Company</p>
-            <a href="" class="btn btn-success">Sample Request</a>
+            <a href="#form-sample" class="btn btn-sample btn-success">Sample Request</a>
           </div>
         </div>
         <div class="carousel-item">
           <div class="wrapper">
-            <img class="d-block w-100" src="../Resources/Images/parfum.jpeg" alt="Fourth slide slide">
+            <img class="d-block w-100" src="../Resources/Images/parfum.jpeg" height="600" alt="Fourth slide slide">
           </div>
           <div class="carousel-caption box-caption">
-            <h2 class="text-dark">Home Quality Standard</h2>
+            <h2 class="text-dark">Higher Quality Standard</h2>
             <p class="text-dark">India's Most Innovative Packaging Company</p>
-            <a href="" class="btn btn-success">Sample Request</a>
+            <a href="#form-sample" class="btn btn-sample btn-success">Sample Request</a>
           </div>
         </div>
         <div class="carousel-item">
           <div class="wrapper">
-            <img class="d-block w-100" src="../Resources/Images/bottle.jpg" alt="Fifth slide">
+            <img class="d-block w-100" src="../Resources/Images/bottle.jpg" height="600" alt="Fifth slide">
           </div>
           <div class="carousel-caption box-caption">
-            <h2 class="text-dark">Home Quality Standard</h2>
+            <h2 class="text-dark">Higher Quality Standard</h2>
             <p class="text-dark">India's Most Innovative Packaging Company</p>
-            <a href="" class="btn btn-success">Sample Request</a>
+            <a href="#form-sample" class="btn btn-sample btn-success">Sample Request</a>
           </div>
         </div>
       </div>
@@ -120,17 +150,17 @@
 
   </div>
 
-  <div class="about-us-section">
+  <div class="about-us-section" id="about-us">
     <div class="container">
-      <h1 class="text-about d-flex justify-content-center align-items-center font-weight-bold text-white">ABOUT US</h1>
       <div class="row">
         <div class="col-md-5">
-          <div class="img-src">
+          <div class="img-src d-flex justify-content-center align-items-center">
             <img src="../Resources/Images/water.png" width="300" alt="">
           </div>
         </div>
         <div class="col-md-7">
           <div class="side-info">
+            <h1 class="text-about font-weight-bold text-white">ABOUT US</h1>
             <p class="about-us text-white text-justify">
               Krishna packaging is a growing name into providing the best range of packaging products. We as a firm have
               established ourselves and provide packaging solutions to various renowned names related with cosmetics and
@@ -148,7 +178,7 @@
 
 
   <div class="Products">
-    <h1 class="our-product-head text-success text-center font-weight-bold">
+    <h1 class="our-product-head text-center font-weight-bold">
       OUR PRODUCTS
     </h1>
     <div class="container">
@@ -172,7 +202,7 @@
                 <h5 class="card-title">Pump</h5>
                 <p class="card-text">We offer a wide range of Pumps (Lotion Pumps, Mist Pump, Dispenser Pump, Crimp
                   Pump, Minioxidil Pump, Nasal Pump). We procure superior grade plastic from our vendor.</p>
-                <div class="button-sample-card"><a href="" class="btn btn-success">Sample Request</a></div>
+                <div class="button-sample-card"><a href="" class="btn-samp btn btn-success">Sample Request</a></div>
               </div>
             </div>
             <div class="card">
@@ -182,7 +212,7 @@
                 <h5 class="card-title">Caps & Closures</h5>
                 <p class="card-text">We have Plastic Disc Top Caps, Flip Top Caps, Aluminum Caps & Screw Caps that are
                   available in different colors and sizes to clients.</p>
-                <div class="button-sample-card"><a href="" class="btn btn-success">Sample Request</a></div>
+                <div class="button-sample-card"><a href="" class="btn-samp btn btn-success">Sample Request</a></div>
               </div>
             </div>
             <div class="card">
@@ -192,7 +222,7 @@
                 <h5 class="card-title">Card Sprayer</h5>
                 <p class="card-text">These are offered to clients at market leading prices in 20ml & 30ml size, also in
                   different colors to meet their individual needs.</p>
-                <div class="button-sample-card"><a href="" class="btn btn-success">Sample Request</a></div>
+                <div class="button-sample-card"><a href="" class="btn-samp btn btn-success">Sample Request</a></div>
               </div>
             </div>
           </div>
@@ -207,7 +237,7 @@
                 <h5 class="card-title">Pen Sprayer</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
-                <div class="button-sample-card"><a href="" class="btn btn-success">Sample Request</a></div>
+                <div class="button-sample-card"><a href="" class="btn-samp btn btn-success">Sample Request</a></div>
               </div>
             </div>
             <div class="card">
@@ -217,7 +247,7 @@
                 <h5 class="card-title">Plastic Bottles</h5>
                 <p class="card-text">We offer 10ml & 15ml Pen Perfume Sprayer.It is available in different sizes and
                   shapes at market leading prices.</p>
-                <div class="button-sample-card"><a href="" class="btn btn-success">Sample Request</a></div>
+                <div class="button-sample-card"><a href="" class="btn-samp btn btn-success">Sample Request</a></div>
               </div>
             </div>
             <div class="card">
@@ -226,7 +256,7 @@
                 <h5 class="card-title">Jars</h5>
                 <p class="card-text">These are made by using fine quality material which we sourced from the reliable
                   vendors of the market.</p>
-                <div class="button-sample-card"><a href="" class="btn btn-success">Sample Request</a></div>
+                <div class="button-sample-card"><a href="" class="btn-samp btn btn-success">Sample Request</a></div>
               </div>
             </div>
           </div>
@@ -235,7 +265,7 @@
     </div>
   </div>
 
-  <div class="form-div">
+  <div class="form-div" id="form-sample">
     <div class="container">
       <div class="form-foot d-flex justify-content-center align-items-center">
         <form class="">
@@ -243,20 +273,20 @@
             SAMPLE REQUEST
           </h2>
           <div class="row">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="First name">
+            <div class="col-md-6 col-6">
+              <input type="text" class="form-control" placeholder="First name" required>
             </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Last name">
+            <div class="col-md-6 col-6">
+              <input type="text" class="form-control" placeholder="Last name" required>
             </div>
           </div>
 
           <div class="row form-area">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Email">
+            <div class="col-md-6 col-6 col-sm-12">
+              <input type="text" class="form-control" placeholder="Email" required>
             </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Phone">
+            <div class="col-md-6 col-6 col-sm-12">
+              <input type="text" class="form-control" placeholder="Phone" required>
             </div>
           </div>
 
@@ -275,22 +305,46 @@
   </div>
 
 
-  <footer class="foot bg-dark">
+  <footer class="foot bg-dark" id="foot">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
           <p class="text-white">&copy; Copyright 2020, KPC</p>
         </div>
         <div class="col-md-4">
-            <P class="text-white">KRISHNA PACKAGING COMPANY</P>
-            <p class="text-justify text-white"> K-5/10 EXTN. ,MOHAN GARDEN,
-              UTTAM NAGAR, NEW DELHI - 110059, INDIA
-              CONTACT PERSON- B.K SINGH</p>
+          <P class="text-white font-weight-bold kpc-hd">KRISHNA PACKAGING COMPANY</P>
+          <div class="row">
+            <div class="location">
+              <img style="margin-right: 10px;"
+                src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/000000/external-location-contact-us-flatarticons-blue-flatarticons.png"
+                width="22.5" height="22.5" />
+            </div>
+            <div class="address">
+              <p class="address-p text-justify text-white"> K-5/10 EXTN. ,MOHAN GARDEN,
+                UTTAM NAGAR <br> NEW DELHI - 110059, INDIA <br> CONTACT PERSON - B.K. SINGH
+            </div>
+          </div>
 
-            <p class=" text-justify"><a class="text-white"
-                href="mailto:krishnapackagingcom@hotmail.com?Subject=Thanks%20for%20visit" target="_blank">
-                krishnapackagingcom@hotmail.com</a></p>
-            <p class="text-white">+91 85956 74859, +91 8595617263</p>
+          <div class="row">
+            <div class="mail-to">
+              <img style="margin-right: 10px;" src="https://img.icons8.com/fluency/48/000000/mail.png" width="22.5"
+                height="22.5" />
+            </div>
+            <div class="mail-in">
+              <p class=" text-justify"><a class="text-white"
+                  href="mailto:krishnapackagingcom@hotmail.com?Subject=Thanks%20for%20visit" target="_blank">
+                  krishnapackagingcom@hotmail.com</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="phone-img">
+              <img style="margin-right: 10px;" src="https://img.icons8.com/doodle/48/000000/apple-phone.png"
+                width="22.5" height="22.5" />
+            </div>
+            <div class="phone">
+              <p class="text-white">+91 85956 74859, +91 8595617263</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
