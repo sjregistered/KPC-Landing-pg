@@ -9,15 +9,21 @@
 
 .box-caption{
     background-color: #fff;
-    opacity: 70%;
+    opacity: 55%;
     border-radius: 5px;
     border: solid black 1px;
-    /* top: 250px; */
-    /* height: 175px; */
+    top: 210px; 
+    height: 175px;
+    position: fixed;
 }
 
 .sampl{
     border-radius: 10px;
+}
+
+.btn-sample{
+    background-color: #007c3c;
+    text-decoration: none;
 }
 
 .sampl:hover{
@@ -27,20 +33,20 @@
 
 #myCarousel-indicators > li {
     border-radius: 50%;
-    background-color: #5d358c;
+    background-color: #ffffff;
     opacity: 20%;
   }
 
 .carousel-indicators .active {
-    color: #000;
+    color: rgb(255, 255, 255);
   }
 
 .carousel-indicators li {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    color: blue;
-    background-color: blue;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
   }
 
 
@@ -50,15 +56,11 @@
     /* height: 700px; */
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: rgba(4, 155, 4, 0.884);
+    background-color: #2d5440;
 }
 
 .img-src{
     border-radius: 50px;
-}
-
-.about-us{
-    margin-top: 30px;
 }
 
 
@@ -67,12 +69,20 @@
 .Products{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: rgba(236, 198, 204, 0.849);
+    background-color: #f2eddb    ;
+}
+
+.our-product-head{
+    color: #00582b;
 }
 
 .products-desc{
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.btn-samp{
+    background-color: #8aaf9c;
 }
 
 .card-decks{
@@ -90,7 +100,7 @@
 } */
 
 .form-div{
-background-color: rgba(236, 198, 204, 0.849);
+background-color: #f2eddb ;
 padding-bottom: 50px;
 }
 
@@ -98,12 +108,35 @@ padding-bottom: 50px;
     margin-bottom: 40px;
 }
 .form-foot{
-    background-color: rgba(4, 155, 4, 0.884);
+    background-color: #8aaf9c;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .form-area{
     margin-top: 20px;
+}
+
+
+/* FOOTER SECTION */
+
+.kpc-hd{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.address-p{
+    font-size: 14px;
+}
+
+@media screen and (max-width:480px){
+    .side-info{
+        margin-top: 40px;
+    }
+
+    .box-caption{
+        top: 180px;
+        height: 225px;
+    }
 }
 
